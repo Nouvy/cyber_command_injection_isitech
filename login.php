@@ -20,7 +20,7 @@ if ($resultat) {
     $_SESSION['id'] = $resultat['id'];
     $_SESSION['username'] = $username;
 
-    echo "Connexion réussie !";
+    header('Location: home.php');
 
 } else {
     echo "Mot de passe incorrect !";
